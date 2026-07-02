@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs / temp
+*.log
+.tmp/
+node_modules/
+
+# Секреты — НИКОГДА не коммитить
+.env
+.env.*
+*.pem
+ftp-credentials.txt

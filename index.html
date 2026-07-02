@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=375px, initial-scale=1.0">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="style.min.css?ver=2.2">
+		<title>Умный сервис</title>
+
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+		<link rel="shortcut icon" href="favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="MyWebSite" />
+		<link rel="manifest" href="favicon/site.webmanifest" />
+	</head>
+	<body>
+		<!--  SITE HEADER -->
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="mobile__triggerNav lg-hide" id="mobile__triggerNav">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="1.75" cy="1.75" r="1.75" fill="#1E2127" /><circle cx="10.5" cy="1.75" r="1.75" fill="#1E2127" /><circle cx="19.25" cy="1.75" r="1.75" fill="#1E2127" /><circle cx="1.75" cy="10.5" r="1.75" fill="#1E2127" /><circle cx="10.5" cy="10.5" r="1.75" fill="#1E2127" /><circle cx="19.25" cy="10.5" r="1.75" fill="#1E2127" /><circle cx="1.75" cy="19.25" r="1.75" fill="#1E2127" /><circle cx="10.5" cy="19.25" r="1.75" fill="#1E2127" /><circle cx="19.25" cy="19.25" r="1.75" fill="#1E2127" /></svg>
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.218104 20.78C0.287761 20.8498 0.370481 20.9051 0.461533 20.9428C0.552585 20.9806 0.650185 21 0.74875 21C0.847316 21 0.944915 20.9806 1.03597 20.9428C1.12702 20.9051 1.20974 20.8498 1.2794 20.78L10.4973 11.563L19.7189 20.78C19.8596 20.9208 20.0505 20.9998 20.2496 20.9998C20.4486 20.9998 20.6395 20.9208 20.7802 20.78C20.9209 20.6393 21 20.4485 21 20.2494C21 20.0504 20.9209 19.8596 20.7802 19.7188L11.5586 10.5018L20.7764 1.28098C20.9172 1.14026 20.9963 0.949394 20.9963 0.750381C20.9963 0.551368 20.9172 0.360505 20.7764 0.219781C20.6357 0.0790577 20.4448 0 20.2458 0C20.0468 0 19.8559 0.0790577 19.7152 0.219781L10.4973 9.44059L1.27565 0.223531C1.13216 0.100667 0.9476 0.036466 0.758836 0.0437565C0.570071 0.051047 0.391009 0.129292 0.257433 0.262857C0.123856 0.396421 0.0456038 0.575467 0.0383126 0.764215C0.0310215 0.952963 0.0952287 1.13751 0.218104 1.28098L9.43598 10.5018L0.218104 19.7226C0.0784096 19.8631 0 20.0532 0 20.2513C0 20.4495 0.0784096 20.6395 0.218104 20.78Z" fill="#1E2127" /></svg>
+					</a>
+
+					<nav class="header__nav sm-hide">
+						<ul class="nav">
+							<li class="menu-item menu-item-has-children">
+								<a href="#">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2292 0.708332H1.77083C0.79475 0.708332 0 1.50308 0 2.47917V16.2917H17V2.47917C17 1.50308 16.2052 0.708332 15.2292 0.708332ZM16.2917 15.5833H0.708333V2.47917C0.708333 1.89337 1.18504 1.41667 1.77083 1.41667H15.2292C15.815 1.41667 16.2917 1.89337 16.2917 2.47917V15.5833ZM6.375 4.25H14.1667V4.95833H6.375V4.25ZM4.25 4.60417C4.25 4.99517 3.93267 5.3125 3.54167 5.3125C3.15067 5.3125 2.83333 4.99517 2.83333 4.60417C2.83333 4.21317 3.15067 3.89583 3.54167 3.89583C3.93267 3.89583 4.25 4.21317 4.25 4.60417ZM6.375 8.14583H14.1667V8.85417H6.375V8.14583ZM4.25 8.5C4.25 8.891 3.93267 9.20833 3.54167 9.20833C3.15067 9.20833 2.83333 8.891 2.83333 8.5C2.83333 8.109 3.15067 7.79167 3.54167 7.79167C3.93267 7.79167 4.25 8.109 4.25 8.5ZM6.375 12.0417H14.1667V12.75H6.375V12.0417ZM4.25 12.3958C4.25 12.7868 3.93267 13.1042 3.54167 13.1042C3.15067 13.1042 2.83333 12.7868 2.83333 12.3958C2.83333 12.0048 3.15067 11.6875 3.54167 11.6875C3.93267 11.6875 4.25 12.0048 4.25 12.3958Z" fill="#1E2127" /></svg>
+									<span>Услуги</span>
+								</a>
+
+								<ul class="sub-menu">
+									<li class="menu-item">
+										<a href="#">Базовая оптимизация</a>
+									</li>
+									<li class="menu-item menu-item-has-children">
+										<a href="#">Продвижение сайта</a>
+
+										<ul class="sub-menu">
+											<li class="menu-item">
+												<a href="#">Стоматология</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">Производства</a>
+											</li>
+											<li class="menu-item">
+												<a href="#">Онлайн-магазины</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item">
+								<a href="#">
+									<svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4362 3.32421L8.69174 0.305292C7.94587 -0.103417 7.05478 -0.103417 6.30962 0.305292L1.56449 3.32492C0.845534 3.7825 0.416992 4.5645 0.416992 5.41663V13.8132C0.416992 15.5706 1.84712 17.0007 3.60449 17.0007H11.3962C13.1535 17.0007 14.5837 15.5706 14.5837 13.8132V5.41592C14.5837 4.56379 14.1551 3.78179 13.4362 3.32421ZM13.8753 13.8125C13.8753 15.1796 12.7632 16.2917 11.3962 16.2917H3.60449C2.23741 16.2917 1.12533 15.1796 1.12533 13.8125V5.41592C1.12533 4.80746 1.43203 4.24858 1.94487 3.92204L6.65883 0.920833C7.19149 0.634666 7.82191 0.636083 8.33049 0.914458L13.0551 3.92204C13.5686 4.24858 13.8746 4.80746 13.8746 5.41521V13.8118L13.8753 13.8125ZM7.50033 3.54167C6.71903 3.54167 6.08366 4.17704 6.08366 4.95833C6.08366 5.73962 6.71903 6.375 7.50033 6.375C8.28162 6.375 8.91699 5.73962 8.91699 4.95833C8.91699 4.17704 8.28162 3.54167 7.50033 3.54167ZM7.50033 5.66667C7.10933 5.66667 6.79199 5.34863 6.79199 4.95833C6.79199 4.56804 7.10933 4.25 7.50033 4.25C7.89133 4.25 8.20866 4.56804 8.20866 4.95833C8.20866 5.34863 7.89133 5.66667 7.50033 5.66667Z" fill="#1E2127" /></svg>
+									<span>Цены</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">
+									<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7845 4.99463C15.7394 4.86875 15.6349 4.77375 15.5042 4.74208C15.4037 4.71754 13.5654 4.27738 11.0543 4.06679V3.33371C11.0543 1.93167 9.9119 0.791668 8.49165 0.791668C7.08724 0.791668 5.94407 1.93167 5.94407 3.33371V4.06679C3.43686 4.27738 1.59545 4.71754 1.4949 4.74129C1.36428 4.77296 1.25899 4.86875 1.21465 4.99463C1.17665 5.10229 0.293945 7.65938 0.293945 11.081C0.293945 14.5318 1.17745 17.0636 1.21545 17.1689C1.25978 17.2948 1.36507 17.3897 1.4949 17.4214C1.62711 17.4539 4.7732 18.2067 8.50036 18.2067C12.2275 18.2067 15.3728 17.4531 15.505 17.4214C15.6357 17.3897 15.7417 17.294 15.7853 17.1681C15.8233 17.0604 16.706 14.5033 16.706 11.081C16.706 7.63008 15.8225 5.09913 15.7853 4.99304L15.7845 4.99463ZM6.73574 3.3345C6.73574 2.36946 7.52345 1.58413 8.50749 1.58413C9.4757 1.58413 10.2634 2.36946 10.2634 3.3345V4.01058C9.69815 3.97733 9.10678 3.95675 8.49957 3.95675C7.89236 3.95675 7.30178 3.97654 6.73574 4.01058V3.3345ZM1.89549 5.4625C2.66815 5.29467 5.41999 4.74763 8.49957 4.74763C11.5792 4.74763 14.3342 5.29467 15.1044 5.4625C15.2572 5.9565 15.6341 7.30708 15.8146 9.11208C14.9485 9.29575 11.9053 9.88475 8.50036 9.88475C5.0954 9.88475 2.05382 9.29654 1.18695 9.11287C1.36824 7.31658 1.74349 5.95967 1.89549 5.4625ZM15.1037 16.7018C14.331 16.8696 11.5799 17.4167 8.49957 17.4167C5.4192 17.4167 2.6642 16.8696 1.8947 16.7018C1.69045 16.0423 1.08561 13.8534 1.08561 11.0817C1.08561 10.678 1.09907 10.2853 1.12203 9.90771C2.09736 10.1104 4.90778 10.6329 8.10374 10.6733V11.8125C8.10374 12.031 8.28107 12.2083 8.49957 12.2083C8.71807 12.2083 8.8954 12.031 8.8954 11.8125V10.6733C12.0866 10.6321 14.9018 10.1096 15.8779 9.90771C15.9009 10.2853 15.9135 10.6772 15.9135 11.0817C15.9135 13.8249 15.3071 16.036 15.1037 16.7018Z" fill="#1E2127" /></svg>
+									<span>Кейсы</span>
+								</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">
+									<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2292 3.25H3.1875C2.37575 3.25 1.61429 2.84838 1.15317 2.18821C1.60225 1.54575 2.34671 1.125 3.1875 1.125H16.6458C16.8413 1.125 17 0.966335 17 0.770835C17 0.575335 16.8413 0.416668 16.6458 0.416668H3.1875C1.42729 0.416668 0 1.84396 0 3.60417V11.3958C0 13.156 1.42729 14.5833 3.1875 14.5833H15.2292C16.2074 14.5833 17 13.7907 17 12.8125V5.02084C17 4.04263 16.2074 3.25 15.2292 3.25ZM16.2917 12.8125C16.2917 13.3983 15.815 13.875 15.2292 13.875H3.1875C1.82042 13.875 0.708333 12.7629 0.708333 11.3958V3.60417C0.708333 3.35767 0.744458 3.11967 0.81175 2.89513C1.411 3.56238 2.27375 3.95834 3.1875 3.95834H15.2292C15.815 3.95834 16.2917 4.43504 16.2917 5.02084V12.8125ZM14.875 8.91667C14.875 9.30767 14.5577 9.625 14.1667 9.625C13.7757 9.625 13.4583 9.30767 13.4583 8.91667C13.4583 8.52567 13.7757 8.20834 14.1667 8.20834C14.5577 8.20834 14.875 8.52567 14.875 8.91667Z" fill="#1E2127" /></svg>
+									<span>Партнерская программа</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<a href="#" class="header__logo">
+						<img src="img/logo.png" class="logo-dark" width="256" height="38" alt="">
+						<img src="img/logo-light.png" class="logo-light" width="256" height="38" alt="">
+					</a>
+
+					<div class="header__info">
+						<a href="#" class="header__tg">
+							<span class="header__tg--square">
+								<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.06288 10.3857L6.76514 14.5738C7.19114 14.5738 7.37563 14.3908 7.59688 14.171L9.59414 12.2622L13.7326 15.293C14.4916 15.716 15.0264 15.4932 15.2311 14.5948L17.9476 1.86575L17.9484 1.865C18.1891 0.742999 17.5426 0.304249 16.8031 0.579499L0.835634 6.69275C-0.254117 7.11575 -0.237617 7.72325 0.650383 7.9985L4.73263 9.26825L14.2149 3.335C14.6611 3.0395 15.0669 3.203 14.7331 3.4985L7.06288 10.3857Z" fill="#1E2127" /></svg>
+							</span>
+							<span class="sm-hide">@p_factor</span>
+						</a>
+
+						<a href="#" class="cbtn cbtn-sm cbtn-dark sm-hide">
+							<span>Войти</span>
+						</a>
+
+						<div class="toggleVertical header__theme sm-hide">
+							<span class="toggleVertical__swith"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!--  SITE MAIN -->
+		<main class="main">
+			<div class="section__intro">
+				<div class="container">
+					<h1 class="intro__heading">
+						Продвижение сайта по SEO <br class="sm-hide">
+						с результатами через 5 дней
+					</h1>
+
+					<div class="intro__desc">
+						Используйте современные инструменты роста <br>
+						позиций и увеличения трафика
+					</div>
+
+					<div class="intro__btns">
+						<a href="https://умныйсервис.рф/login/" class="cbtn cbtn-lg cbtn-default">
+							<span>Запустить 5 дней бесплатного теста</span>
+							<span class="cbtn__div"></span>
+							<span class="cbtn__iconCircle">
+								<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500" /></svg>
+							</span>
+						</a>
+
+						<a href="#" class="cbtn cbtn-sm cbtn-gray cbtn-outline">
+							<span>Как это работает?</span>
+							<span class="cbtn__div"></span>
+							<svg class="cbtn__icon--cc" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 8.5C17.5 3.81321 13.6868 0 9 0C4.31321 0 0.5 3.81321 0.5 8.5C0.5 13.1868 4.31321 17 9 17C13.6868 17 17.5 13.1868 17.5 8.5ZM1.34931 8.5C1.34931 4.2812 4.7812 0.849307 9 0.849307C13.2188 0.849307 16.6507 4.2812 16.6507 8.5C16.6507 12.7188 13.2188 16.1507 9 16.1507C4.7812 16.1507 1.34931 12.7188 1.34931 8.5Z" fill="#FF693A" /><path d="M9.30198 12.4935L11.6904 10.105C11.8568 9.93861 11.8568 9.67168 11.6904 9.50529C11.524 9.33889 11.2571 9.33889 11.0907 9.50529L9.42678 11.1692V4.8081C9.42678 4.57237 9.23612 4.38171 9.00039 4.38171C8.76467 4.38171 8.574 4.57237 8.574 4.8081V11.1658L6.91006 9.50182C6.74366 9.33543 6.47674 9.33543 6.31034 9.50182C6.14395 9.66821 6.14395 9.93514 6.31034 10.1015L8.6988 12.49C8.782 12.5732 8.88946 12.6148 9.00039 12.6148C9.11132 12.6148 9.21878 12.5767 9.30198 12.4935Z" fill="#FF693A" /></svg>
+						</a>
+					</div>
+
+					<a href="#" data-video="https://vkvideo.ru/video_ext.php?oid=-228002453&id=456239381&hd=2&autoplay=1" class="boxVideo intro__video js-playVideo">
+						<img src="img/intro.png" width="1183" height="585" alt="" class="boxVideo__poster">
+						<span class="boxVideo__play">
+							<svg width="38" height="44" viewBox="0 0 38 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M34.8906 16.3281L8.0625 0.828125C7.29561 0.374407 6.42228 0.131813 5.53125 0.125C4.13058 0.125 2.78727 0.681416 1.79684 1.67184C0.806416 2.66227 0.25 4.00558 0.25 5.40625V38.6719C0.250178 39.6014 0.499346 40.5139 0.971597 41.3144C1.44385 42.115 2.12194 42.7745 2.93537 43.2243C3.74879 43.674 4.66786 43.8977 5.597 43.872C6.52614 43.8463 7.43143 43.5722 8.21875 43.0781L35.0781 26.1094C35.9133 25.5867 36.5988 24.8566 37.0678 23.9902C37.5369 23.1238 37.7735 22.1507 37.7547 21.1656C37.7358 20.1806 37.462 19.2173 36.9601 18.3695C36.4582 17.5217 35.7452 16.8184 34.8906 16.3281Z" fill="#1E2127" /></svg>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="section pt0">
+				<div class="container">
+					<div class="section__head section__head--row">
+						<div class="label-default lg-hide">
+							<span>Фокус на простоте</span>
+						</div>
+
+						<div class="space-sm lg-hide"></div>
+
+						<h2 class="section__heading">
+							3 простых шага <br class="sm-hide">
+							для запуска <br class="sm-hide">
+							продвижения
+						</h2>
+
+						<div class="section__info">
+							<div class="label-default sm-hide">
+								<span>Фокус на простоте</span>
+							</div>
+
+							<div class="section__desc">
+								Настройте продвижение сайта за несколько минут — <br>
+								система всё сделает автоматически, а первые результаты <br>
+								появятся уже в ближайшие дни.
+							</div>
+						</div>
+					</div>
+
+					<div class="row sm-row-slide">
+						<div class="col-4">
+							<div class="stepNum">
+								<div class="stepNum__num">
+									<span>1</span>
+								</div>
+
+								<div class="stepNum__title">
+									Регистрация <br>
+									без <span class="stepNum__div"></span> ввода данных
+								</div>
+
+								<div class="stepNum__desc">
+									Первый шаг для начала продвижения - это регистрация через Telegram. Данная система регистрации экономит Ваше время на 70%.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="stepNum bgr--сonfetti">
+								<div class="stepNum__num">
+									<span>2</span>
+								</div>
+
+								<div class="stepNum__title">
+									Добавление сайта <br>
+									и <span class="stepNum__div"></span> запросов
+								</div>
+
+								<div class="stepNum__desc">
+									Укажите домен Вашего сайта и добавьте список ключевых слов самостоятельно или рекомендованные нашим сервисом для старта продвижения.
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="stepNum">
+								<div class="stepNum__num">
+									<span>3</span>
+								</div>
+
+								<div class="stepNum__title">
+									Снимает отчет до <br>
+									показываем <span class="stepNum__div"></span> результаты <br>
+									после
+								</div>
+
+								<div class="stepNum__desc">
+									Ваш менеджер снимает отчет до начало работ и по завершении тестового периода покажет результаты.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section pt0 pb0">
+				<div class="container">
+					<div class="infoBanner">
+						<div class="row">
+							<div class="col-6">
+								<div class="section__head dir-column sm-jcc mb0 h100">
+									<div class="label-default sm-block-center">
+										<span>автоматизация</span>
+									</div>
+
+									<div class="section__head--space"></div>
+
+									<h2 class="section__heading sm-align-center">
+										Мы работаем, <br>
+										Вы отдыхаете
+									</h2>
+
+									<div class="section__head--space md"></div>
+
+									<div class="section__desc mt-a fix-width sm-align-center">
+										Сервис сам обновляет позиции и формирует отчёты каждую неделю. Все изменения продвижения доступны в личном кабинете и дублируются в удобных уведомлениях.
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-light="img/chat.png" data-dark="img/chat-light.png" width="631" height="614" alt="" class="infoBanner__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="container">
+					<div class="section__inner bgr-dark">
+						<div class="section__head align-center">
+							<div class="label-default block-center">
+								<span>Тарифы для любого бизнеса</span>
+							</div>
+
+							<div class="section__head--space"></div>
+
+							<h2 class="section__heading color-light">
+								Тарифы, которые меняют <br>
+								представление о стоимости SEO
+							</h2>
+
+							<div class="space-default"></div>
+
+							<div class="section__desc color-light">
+								Подберите оптимальный план в зависимости от целей проекта и масштабов бизнеса. <br>
+								Все пакеты включают базовую поддержку и аналитику
+							</div>
+						</div>
+
+							<div class="rate__list rl-primary">
+								<a href="#rate-1" data-discount-txt="Без скидки">
+									<span>1 месяц</span>
+								</a>
+								<a href="#rate-2" class="active" data-discount-txt="-5% на все пакеты">
+									<span>2 месяца</span>
+								</a>
+								<a href="#rate-3" data-discount-txt="-10% на все пакеты">
+									<span>3 месяца</span>
+								</a>
+								<a href="#rate-4" data-discount-txt="-20% на все пакеты">
+									<span>6 месяца</span>
+								</a>
+								<a href="#rate-5" data-discount-txt="-25% на все пакеты">
+									<span>1 год</span>
+								</a>
+							</div>
+
+							<div class="space-default"></div>
+
+							<div class="label-default block-center" id="rate-discount">
+								<span>-5% на все пакеты</span>
+							</div>
+
+							<div class="row row-sm row-rates">
+								<div class="col-9">
+									<div class="rate__content" id="rate-1">
+										<div class="rate__content--inner">
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">50 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">287 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item active">
+												<div class="rate__head">
+													<div class="rate__title">100 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">497 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">150 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">560 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">200 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">633 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">300 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">757 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">500 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">900 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">700 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">1 030 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">1000 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__price">1 227 ₽/сутки</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rate__content active" id="rate-2">
+										<div class="rate__content--inner">
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">50 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">287 ₽/сутки</div>
+													<div class="rate__price">272 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item active">
+												<div class="rate__head">
+													<div class="rate__title">100 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">497 ₽/сутки</div>
+													<div class="rate__price">470 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">150 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">560 ₽/сутки</div>
+													<div class="rate__price">532 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">200 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">633 ₽/сутки</div>
+													<div class="rate__price">600 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">300 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">757 ₽/сутки</div>
+													<div class="rate__price">719 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">500 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">900 ₽/сутки</div>
+													<div class="rate__price">854 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">700 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 030 ₽/сутки</div>
+													<div class="rate__price">977 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">1000 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 227 ₽/сутки</div>
+													<div class="rate__price">1 165 ₽/сутки</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rate__content" id="rate-3">
+										<div class="rate__content--inner">
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">50 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">287 ₽/сутки</div>
+													<div class="rate__price">257 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item active">
+												<div class="rate__head">
+													<div class="rate__title">100 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">497 ₽/сутки</div>
+													<div class="rate__price">447 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">150 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">560 ₽/сутки</div>
+													<div class="rate__price">504 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">200 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">633 ₽/сутки</div>
+													<div class="rate__price">569 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">300 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">757 ₽/сутки</div>
+													<div class="rate__price">680 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">500 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">900 ₽/сутки</div>
+													<div class="rate__price">809 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">700 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 030 ₽/сутки</div>
+													<div class="rate__price">927 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">1000 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 227 ₽/сутки</div>
+													<div class="rate__price">1 104 ₽/сутки</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rate__content" id="rate-4">
+										<div class="rate__content--inner">
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">50 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">287 ₽/сутки</div>
+													<div class="rate__price">229 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item active">
+												<div class="rate__head">
+													<div class="rate__title">100 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">497 ₽/сутки</div>
+													<div class="rate__price">397 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">150 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">560 ₽/сутки</div>
+													<div class="rate__price">448 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">200 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">633 ₽/сутки</div>
+													<div class="rate__price">507 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">300 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">757 ₽/сутки</div>
+													<div class="rate__price">605 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">500 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">900 ₽/сутки</div>
+													<div class="rate__price">720 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">700 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 030 ₽/сутки</div>
+													<div class="rate__price">824 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">1000 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 227 ₽/сутки</div>
+													<div class="rate__price">981 ₽/сутки</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rate__content" id="rate-5">
+										<div class="rate__content--inner">
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">50 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">287 ₽/сутки</div>
+													<div class="rate__price">215 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item active">
+												<div class="rate__head">
+													<div class="rate__title">100 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">497 ₽/сутки</div>
+													<div class="rate__price">373 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">150 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">560 ₽/сутки</div>
+													<div class="rate__price">420 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">200 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">633 ₽/сутки</div>
+													<div class="rate__price">475 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">300 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">757 ₽/сутки</div>
+													<div class="rate__price">568 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">500 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">900 ₽/сутки</div>
+													<div class="rate__price">675 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">700 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 030 ₽/сутки</div>
+													<div class="rate__price">773 ₽/сутки</div>
+												</div>
+											</div>
+											<div class="rate__item">
+												<div class="rate__head">
+													<div class="rate__title">1000 запросов</div>
+													<div class="rate__radio"></div>
+												</div>
+												<div class="rate__desc">
+													<div class="rate__old-price">1 227 ₽/сутки</div>
+													<div class="rate__price">920 ₽/сутки</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-3">
+									<div class="boxForm">
+										<div class="boxForm__title color-light">
+											Запустите <br>
+											продвижение в 1 клик
+										</div>
+										<div class="boxForm__desc color-light">
+											Выберите тариф, введите адрес сайта и запустите продвижение
+										</div>
+
+										<!-- <div class="form-group">
+											<input type="text" placeholder="Введите адрес сайта" class="form-control">
+										</div> -->
+										<a class="cbtn cbtn-md cbtn-default w100 alt" href="https://xn--b1afkbogxgel4g.xn--p1ai/login/">
+											<span>Запустить продвижение</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="space__section"></div>
+
+						<div class="section__head sm-jcc">
+							<div class="label-default sm-block-center">
+								<span>Базовая оптимизация</span>
+							</div>
+
+							<div class="section__head--space"></div>
+
+							<h2 class="section__heading color-light sm-align-center">
+								Запустим любой, даже новый сайт
+							</h2>
+						</div>
+
+						<div class="row">
+							<div class="col-6 sm-pv0">
+								<div class="section__desc fix-width color-light sm-align-center">
+									Если сайт не оптимизирован, поведенческие факторы не смогут раскрыть свой потенциал. "БАЗА" — это базовый пакет работ: мы устраняем технические ошибки, настраиваем структуру и подготавливаем площадку для продвижения
+								</div>
+
+								<div class="space-lg"></div>
+
+								<img src="img/chat2.png" width="471" height="312" class="sm-block-center sm-image__sm" alt="">
+							</div>
+
+							<div class="col-6">
+								<div class="space-default lg-hide"></div>
+								<div class="cbox">
+									<div class="cbox__title color-light">
+										В рамках "БАЗЫ" вы получите:
+									</div>
+
+									<ul class="list color-light">
+										<li>
+											<span>Оперативный аудит и выявление проблем</span>
+										</li>
+										<li>
+											<span>Исправление ключевых технических ошибок</span>
+										</li>
+										<li>
+											<span>Настройка базовых SEO-параметров</span>
+										</li>
+										<li>
+											<span>Минимальное вмешательство в дизайн и функционал</span>
+										</li>
+									</ul>
+
+									<div class="space-lg"></div>
+
+									<div class="lead-sm color-gray">
+										Работы проводятся в экспресс-формате за счёт автоматизации и технологий AI: мы быстро анализируем сайт, исправляем критические ошибки, оптимизируем мета-теги и улучшаем структуру страниц
+									</div>
+
+									<div class="space-default"></div>
+
+									<a href="https://xn--b1afkbogxgel4g.xn--p1ai/usluga-baza/" class="cbtn cbtn-md cbtn-light w100">
+										<span>Мне нужна "БАЗА"</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500" /></svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="space__section"></div>
+
+						<div class="cbox-lg">
+							<div class="row">
+								<div class="col-6">
+									<div class="dir-column h100">
+										<div class="label-default">
+											<span>Ребята, которые всегда на связи</span>
+										</div>
+
+										<div class="section__head--space lg-hide"></div>
+
+										<div class="h2 section__heading color-light lg-hide">
+											Наши герои
+										</div>
+
+										<div class="section__head--space"></div>
+
+										<div class="section__desc fix-width color-light">
+											Каждый клиент получает собственного специалиста, который курирует продвижение сайта от старта до результата. Менеджер контролирует все процессы, анализирует поведенческие показатели и оперативно корректирует стратегию, чтобы вы всегда оставались в ТОПе. Это экономит ваше время и гарантирует индивидуальный подход без лишних сложностей.
+										</div>
+
+										<div class="mt-a"></div>
+
+										<a href="#" class="cbtn cbtn-md cbtn-default alt sm-hide">
+											<span>Задать вопрос в поддержку</span>
+											<span class="cbtn__div"></span>
+											<span class="cbtn__iconCircle">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+											</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-6">
+									<div class="section__head sm-hide">
+										<h2 class="section__heading color-light">
+											Наши герои
+										</h2>
+									</div>
+
+									<div class="wrap-carousel relative wrap-carousel-team">
+										<div class="carousel-team" id="carousel-team">
+											<div class="team__item">
+												<img src="img/u1-tt.png" width="305" height="310" alt="" class="team__img">
+
+												<div class="team__content color-light">
+													<div class="team__title">
+														Иван Иванов
+													</div>
+
+													<div class="team__desc">
+														project manager
+													</div>
+												</div>
+
+											</div>
+
+											<div class="team__item">
+												<img src="img/u2-tt.png" width="305" height="310" alt="" class="team__img">
+
+												<div class="team__content color-light">
+													<div class="team__title">
+														Ирина Васильева
+													</div>
+
+													<div class="team__desc">
+														project manager
+													</div>
+												</div>
+
+											</div>
+
+											<div class="team__item">
+												<img src="img/u1-tt.png" width="305" height="310" alt="" class="team__img">
+
+												<div class="team__content color-light">
+													<div class="team__title">
+														Иван Иванов
+													</div>
+
+													<div class="team__desc">
+														project manager
+													</div>
+												</div>
+
+											</div>
+
+											<div class="team__item">
+												<img src="img/u2-tt.png" width="305" height="310" alt="" class="team__img">
+
+												<div class="team__content color-light">
+													<div class="team__title">
+														Ирина Васильева
+													</div>
+
+													<div class="team__desc">
+														project manager
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="carousel--arrows end">
+											<button class="carousel--arrow carousel--prev slick-arrow" style="">
+												<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22785 6.77197L9.56414 8.10833L3.61767 14.0549H30V15.9448H3.61767L9.56414 21.8913L8.22785 23.2276L-1.90735e-06 14.9998L8.22785 6.77197Z" fill="white" /></svg>
+											</button>
+											<button class="carousel--arrow carousel--next slick-arrow" style="">
+												<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7721 6.77197L20.4359 8.10833L26.3823 14.0549H0V15.9448H26.3823L20.4359 21.8913L21.7721 23.2276L30 14.9998L21.7721 6.77197Z" fill="white" /></svg>
+											</button>
+										</div>
+									</div>
+
+									<div class="space-default lg-hide"></div>
+									<a href="#" class="cbtn cbtn-md cbtn-default alt lg-hide">
+										<span>Задать вопрос в поддержку</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section pt0">
+				<div class="container">
+					<div class="section__head section__head--row">
+						<div>
+							<div class="label-default">
+								<span>Преимущества</span>
+							</div>
+
+							<div class="section__head--space"></div>
+
+							<h2 class="section__heading">
+								Почему для провижения <br>
+								выбирают наш сервис
+							</h2>
+						</div>
+
+						<div class="carousel--arrows end sm-hide" data-source="carousel-why">
+							<button class="carousel--arrow carousel--prev slick-arrow">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22785 6.77197L9.56414 8.10833L3.61767 14.0549H30V15.9448H3.61767L9.56414 21.8913L8.22785 23.2276L-1.90735e-06 14.9998L8.22785 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+							<button class="carousel--arrow carousel--next slick-arrow">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7721 6.77197L20.4359 8.10833L26.3823 14.0549H0V15.9448H26.3823L20.4359 21.8913L21.7721 23.2276L30 14.9998L21.7721 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="wrap__carousel-why">
+						<div class="carousel-why" id="carousel-why">
+							<div class="why__item">
+								<div class="why__item--title">
+									Независимая оценка <br>
+									результатов
+								</div>
+
+								<div class="why__item--desc">
+									Мы используем прямые данные Яндекса <br>
+									по позициям сайта в поиске
+								</div>
+
+								<div class="why__icon">
+									<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6156 0.285156L6.44431 8.79338L2.56572 4.65428L0 7.0585L6.26605 13.7455L18 2.86983L15.6156 0.285156Z" fill="white" /></svg>
+								</div>
+							</div>
+
+							<div class="why__item">
+								<div class="why__item--title">
+									SEO доступное <br>
+									каждому
+								</div>
+
+								<div class="why__item--desc">
+									Наша сила в простом интерфейсе <br>
+									и доступной цене
+								</div>
+
+								<div class="why__icon">
+									<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6156 0.285156L6.44431 8.79338L2.56572 4.65428L0 7.0585L6.26605 13.7455L18 2.86983L15.6156 0.285156Z" fill="white" /></svg>
+								</div>
+							</div>
+
+							<div class="why__item">
+								<div class="why__item--title">
+									Независимая оценка <br>
+									результатов
+								</div>
+
+								<div class="why__item--desc">
+									Мы используем прямые данные Яндекса по позициям сайта в поиске
+								</div>
+
+								<div class="why__icon">
+									<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6156 0.285156L6.44431 8.79338L2.56572 4.65428L0 7.0585L6.26605 13.7455L18 2.86983L15.6156 0.285156Z" fill="white" /></svg>
+								</div>
+							</div>
+
+							<div class="why__item">
+								<div class="why__item--title">
+									SEO доступное <br>
+									каждому
+								</div>
+
+								<div class="why__item--desc">
+									Наша сила в простом интерфейсе и доступной цене
+								</div>
+
+								<div class="why__icon">
+									<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6156 0.285156L6.44431 8.79338L2.56572 4.65428L0 7.0585L6.26605 13.7455L18 2.86983L15.6156 0.285156Z" fill="white" /></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section pt0">
+				<div class="container">
+					<div class="section__head align-center">
+						<div class="label-default block-center">
+							<span>Проверено на более 1000 проектах</span>
+						</div>
+
+						<div class="section__head--space"></div>
+
+						<h2 class="section__heading">
+							Динамика <br>
+							продвижения в цифрах
+						</h2>
+
+						<div class="space-default"></div>
+
+						<div class="section__desc">
+							Наглядный график показывает, как растёт видимость сайта и позиции в Яндексе <br>
+							с момента подключения сервиса.
+						</div>
+					</div>
+
+					<div class="boxConnect">
+						<div class="boxConnect__inner">
+							<div class="boxConnect__col1">
+								<div class="boxConnect__col--title">
+									До подключения
+								</div>
+								<div class="boxConnect__col--desc">
+									Сайт терял позиции и клиентов, <br>
+									рост был минимальный
+								</div>
+
+								<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-light="img/ch1.png" data-dark="img/ch1-dark.png" width="515" height="316" alt="">
+							</div>
+
+							<div class="boxConnect__col2">
+								<div class="boxConnect__col--title">
+									После подключения
+								</div>
+								<div class="boxConnect__col--desc">
+									Видимость растёт стабильно, позиции <br>
+									выходят в топ
+								</div>
+
+								<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-light="img/after.png" data-dark="img/after-dark.png" width="840" height="520" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section pt0 section-96483dc6">
+				<div class="container relative zi-1">
+					<div class="section__head sm-to-row">
+						<div>
+							<div class="label-default">
+								<span>Кейсы</span>
+							</div>
+
+							<div class="section__head--space"></div>
+
+							<h2 class="section__heading">
+								Истории роста <br>
+								наших клиентов
+							</h2>
+
+							<div class="space-default"></div>
+
+							<div class="section__desc">
+								Реальные проекты, где наш сервис кратно усилил SEO сайта.
+							</div>
+						</div>
+
+						<div class="carousel--arrows lg-hide" data-source="carousel-case">
+							<button class="carousel--arrow carousel--prev slick-arrow" style="">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22785 6.77197L9.56414 8.10833L3.61767 14.0549H30V15.9448H3.61767L9.56414 21.8913L8.22785 23.2276L-1.90735e-06 14.9998L8.22785 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+							<button class="carousel--arrow carousel--next slick-arrow" style="">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7721 6.77197L20.4359 8.10833L26.3823 14.0549H0V15.9448H26.3823L20.4359 21.8913L21.7721 23.2276L30 14.9998L21.7721 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="wrap-carousel wrap-carousel-case relative">
+						<div class="carousel-case" id="carousel-case">
+							<div class="case__item">
+								<div class="case__content">
+									<div class="case__title">
+										Интернет-магазин <br>
+										шоколадного печенья
+									</div>
+									
+									<div class="case__compars">
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Было</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">9%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">12</span>
+											</div>
+										</div>
+
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Стало</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind primary"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">86%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind danger"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">649</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="sm-hide">
+										<div class="case__desc mt-a">
+											<b>Хотите такой же рост?</b><br>
+											Зарегистрируйтесь и начните продвижение прямо сейчас.
+										</div>
+
+										<div class="space-mds">
+											<a href="#" class="cbtn cbtn-md cbtn-default">
+												<span>Попробовать бесплатно</span>
+												<span class="cbtn__div"></span>
+												<span class="cbtn__iconCircle">
+													<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__result">
+									<img src="img/history.png" width="768" height="570" alt="">
+								</div>
+
+								<div class="lg-hide">
+									<div class="case__desc mt-a">
+										<b>Хотите такой же рост?</b><br>
+										Зарегистрируйтесь и начните продвижение прямо сейчас.
+									</div>
+
+									<div class="space-mds block-center">
+										<a href="#" class="cbtn cbtn-md cbtn-default">
+											<span>Попробовать бесплатно</span>
+											<span class="cbtn__div"></span>
+											<span class="cbtn__iconCircle">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="case__item">
+								<div class="case__content">
+									<div class="case__title">
+										Кейс 2
+									</div>
+									
+									<div class="case__compars">
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Было</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">9%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">12</span>
+											</div>
+										</div>
+
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Стало</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind primary"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">86%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind danger"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">649</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="sm-hide">
+										<div class="case__desc mt-a">
+											<b>Хотите такой же рост?</b><br>
+											Зарегистрируйтесь и начните продвижение прямо сейчас.
+										</div>
+
+										<div class="space-mds">
+											<a href="#" class="cbtn cbtn-md cbtn-default">
+												<span>Попробовать бесплатно</span>
+												<span class="cbtn__div"></span>
+												<span class="cbtn__iconCircle">
+													<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__result">
+									<img src="img/history.png" width="768" height="570" alt="">
+								</div>
+
+								<div class="lg-hide">
+									<div class="case__desc mt-a">
+										<b>Хотите такой же рост?</b><br>
+										Зарегистрируйтесь и начните продвижение прямо сейчас.
+									</div>
+
+									<div class="space-mds block-center">
+										<a href="#" class="cbtn cbtn-md cbtn-default">
+											<span>Попробовать бесплатно</span>
+											<span class="cbtn__div"></span>
+											<span class="cbtn__iconCircle">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="case__item">
+								<div class="case__content">
+									<div class="case__title">
+										Кейс 3
+									</div>
+									
+									<div class="case__compars">
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Было</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">9%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">12</span>
+											</div>
+										</div>
+
+										<div class="case__compare--item">
+											<div class="case__compare--heading">Стало</div>
+
+											<div class="case__compare">
+												<span class="case__compare--ind primary"></span>
+												<span class="case__compare--title">Видимость сайта</span>
+												<span class="case__compare--value">86%</span>
+											</div>
+											<div class="case__compare">
+												<span class="case__compare--ind danger"></span>
+												<span class="case__compare--title">Запросов в ТОП-10</span>
+												<span class="case__compare--value">649</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="sm-hide">
+										<div class="case__desc mt-a">
+											<b>Хотите такой же рост?</b><br>
+											Зарегистрируйтесь и начните продвижение прямо сейчас.
+										</div>
+
+										<div class="space-mds">
+											<a href="#" class="cbtn cbtn-md cbtn-default">
+												<span>Попробовать бесплатно</span>
+												<span class="cbtn__div"></span>
+												<span class="cbtn__iconCircle">
+													<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__result">
+									<img src="img/history.png" width="768" height="570" alt="">
+								</div>
+
+								<div class="lg-hide">
+									<div class="case__desc mt-a">
+										<b>Хотите такой же рост?</b><br>
+										Зарегистрируйтесь и начните продвижение прямо сейчас.
+									</div>
+
+									<div class="space-mds block-center">
+										<a href="#" class="cbtn cbtn-md cbtn-default">
+											<span>Попробовать бесплатно</span>
+											<span class="cbtn__div"></span>
+											<span class="cbtn__iconCircle">
+												<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel--arrows sm-hide">
+							<button class="carousel--arrow carousel--prev slick-arrow" style="">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22785 6.77197L9.56414 8.10833L3.61767 14.0549H30V15.9448H3.61767L9.56414 21.8913L8.22785 23.2276L-1.90735e-06 14.9998L8.22785 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+							<button class="carousel--arrow carousel--next slick-arrow" style="">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7721 6.77197L20.4359 8.10833L26.3823 14.0549H0V15.9448H26.3823L20.4359 21.8913L21.7721 23.2276L30 14.9998L21.7721 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+
+							<div class="carousel__totals">
+								<span>1</span> / 3
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__eclipse"></div>
+			</div>
+
+			<div class="section pt0 section-a3566781 overflow-inherit zi-1">
+				<div class="container">
+					<div class="section__head">
+						<div class="label-default">
+							<span>Цифры</span>
+						</div>
+
+						<div class="section__head--space"></div>
+
+						<h2 class="section__heading">
+							Сервис в цифрах
+						</h2>
+					</div>
+
+					<div class="row row-lg">
+						<div class="col-6">
+							<div class="cbox2">
+								<div class="cbox2__title">
+									Более 2140 успешных проектов
+								</div>
+
+								<div class="cbox2__desc">
+									Мы помогли десяткам компаний вывести сайты в ТОП. Алгоритмы учитывают специфику бизнеса и рынок, что позволяет добиваться стабильного роста и удерживать позиции в конкурентных нишах.
+								</div>
+
+								<div class="cbox2__inner">
+									<div class="cbox2__inner--content">
+										<div class="cbox2__inner--tilte">2140 +</div>
+										<div class="cbox2__inner--desc">
+											протестировали сервис <br>
+											и получили первые результаты <br>
+											ещё на демо-этапе
+										</div>
+									</div>
+									
+									<img src="img/dug.png" class="cbox2__inner--img" width="609" height="325" alt="">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<div class="dir-column h100">
+								<div class="cbox3">
+									<div class="cbox3__title">
+										120 ниш
+									</div>
+
+									<div class="cbox3__desc">
+										от e-commerce до сложных B2B, где мы закрепили <br>
+										рост позиций
+									</div>
+
+									<div class="cbox3__icon">
+										<img src="img/icon1.svg" width="20" height="20" alt="">
+									</div>
+								</div>
+
+								<div class="cbox3 mt-a">
+									<div class="cbox3__title">
+										2,3 млн запросов
+									</div>
+
+									<div class="cbox3__desc">
+										обработано системой, чтобы отточить алгоритмы <br>
+										под реальную выдачу
+									</div>
+
+									<div class="cbox3__icon">
+										<img src="img/icon2.svg" width="20" height="20" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section__circle"></div>
+				<div class="section__circle2"></div>
+			</div>
+
+			<div class="section section-2b9eafb7 pt0 overflow-inherit">
+				<div class="container">
+					<div class="section__head lg-hide">
+						<div class="label-default">
+							<span>Для каких сайтов</span>
+						</div>
+
+						<div class="section__head--space"></div>
+
+						<div class="h2 section__heading">
+							Подходит для <br>
+							любого сайта
+						</div>
+
+						<div class="space-default"></div>
+
+						<div class="section__desc">
+							Сервис универсален и одинаково эффективно работает с любыми типами проектов. Независимо от того, какой у вас сайт — небольшой блог или крупный интернет-магазин, инструмент подстраивается под задачи и обеспечивает рост позиций.
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6">
+							<div class="wraps-cbox4 h100">
+								<div class="cbox4">
+									<div class="cbox4__title">
+										Интернет-магазины
+										<br class="sm-hide">
+										<span class="sm-hide">&nbsp;</span>
+									</div>
+									<div class="cbox4__desc">
+										Увеличение продаж <br>
+										за счёт роста видимости
+										товаров и категорий.
+									</div>
+
+									<div class="cbox4__space"></div>
+
+									<a href="#" class="cbtn cbtn-sm cbtn-light align-left alt w100">
+										<span>
+											5 кейсов <br>
+											в данной нише
+										</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="9" height="9" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+										</span>
+									</a>
+								</div>
+
+								<div class="cbox5">
+									<div class="cbox5__title">
+										Контентные <br>
+										проекты и блоги
+									</div>
+
+									<img src="img/laptop.png" width="275" height="275" alt="" class="cbox5__img">
+
+									<div class="cbox5__desc">
+										Рост посещаемости,
+										повышение кликабельности
+										и удержания аудитории.
+									</div>
+
+									<div class="cbox4__space"></div>
+
+									<a href="#" class="cbtn cbtn-sm cbtn-light align-left alt w100">
+										<span>
+											5 кейсов <br>
+											в данной нише
+										</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="9" height="9" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6">
+							<div class="section__head sm-hide">
+								<div class="label-default">
+									<span>Для каких сайтов</span>
+								</div>
+
+								<div class="section__head--space"></div>
+
+								<h2 class="section__heading">
+									Подходит для <br>
+									любого сайта
+								</h2>
+
+								<div class="space-default"></div>
+
+								<div class="section__desc">
+									Сервис универсален и одинаково эффективно работает с любыми типами проектов. Независимо от того, какой у вас сайт — небольшой блог или крупный интернет-магазин, инструмент подстраивается под задачи и обеспечивает рост позиций.
+								</div>
+							</div>
+
+							<div class="wraps-cbox4">
+								<div class="cbox4">
+									<div class="cbox4__title">
+										Сайты услуг
+										<br class="sm-hide">
+										<span class="sm-hide">&nbsp;</span>
+									</div>
+									<div class="cbox4__desc">
+										Салоны, студии, юридические
+										и медицинские компании — больше
+										клиентов без переплат за рекламу.
+									</div>
+
+									<div class="cbox4__space"></div>
+
+									<a href="#" class="cbtn cbtn-sm cbtn-light align-left alt w100">
+										<span>
+											5 кейсов <br>
+											в данной нише
+										</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="9" height="9" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+										</span>
+									</a>
+								</div>
+
+								<div class="cbox4">
+									<div class="cbox4__title">
+										Корпоративные сайты 
+										и стартапы
+									</div>
+									<div class="cbox4__desc">
+										Быстрый способ занять позиции
+										в поиске и протестировать нишу
+										с минимальными затратами.
+									</div>
+
+									<div class="cbox4__space"></div>
+
+									<a href="#" class="cbtn cbtn-sm cbtn-light align-left alt w100">
+										<span>
+											5 кейсов <br>
+											в данной нише
+										</span>
+										<span class="cbtn__div"></span>
+										<span class="cbtn__iconCircle">
+											<svg width="9" height="9" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section bgr-gray section-f2a3e44e">
+				<div class="container">
+					<div class="label-default sm-block-center">
+						<span>Faq</span>
+					</div>
+
+					<div class="section__head--space"></div>
+
+					<div class="row-faq">
+						<div class="faq__col-1">
+							<div class="section__head">
+								<h2 class="section__heading sm-align-center">
+									Вопросы <br class="sm-hide">
+									и ответы
+								</h2>
+							</div>
+
+							<div class="faq__info sm-hide">
+								<div class="faq__icon">
+									<span>?</span>
+								</div>
+								<div class="faq__info--title">Есть вопросы?</div>
+								<a href="#" class="cbtn cbtn-md cbtn-default w100">
+									<span>Спросите у менеджера</span>
+									<span class="cbtn__div"></span>
+									<span class="cbtn__iconCircle">
+										<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+									</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="faq__col-2">
+							<div class="faq__item">
+								<div class="faq__item--title">
+									Как можно бесплатно протестировать сервис?
+								</div>
+								<div class="faq__item--desc">
+									Мы предлагаем всем новым пользователям 5 дней бесплатного продвижения. Просто зарегистрируйтесь и начните тестировать уже сейчас!
+								</div>
+							</div>
+
+							<div class="faq__item">
+								<div class="faq__item--title">
+									Гарантируете ли вы вывод в ТОП по всем запросам?
+								</div>
+								<div class="faq__item--desc">
+									Мы гарантируем значительный рост позиций и трафика, но точные результаты зависят от начальной ситуации и уровня конкуренции в вашей нише.
+								</div>
+							</div>
+
+							<div class="faq__item">
+								<div class="faq__item--title">
+									Что будет после отключения?
+								</div>
+								<div class="faq__item--desc">
+									Достигнутые позиции сохранятся, хотя со временем могут постепенно снижаться, в зависимости от уровня конкуренции в нише. Но они не опустятся ниже начальных значений.
+								</div>
+							</div>
+
+							<div class="faq__item">
+								<div class="faq__item--title">
+									Безопасна ли эта технология?
+								</div>
+								<div class="faq__item--desc">
+									Да, наша технология полностью безопасна.
+								</div>
+							</div>
+						</div>
+
+						<div class="faq__info lg-hide">
+							<div class="faq__icon">
+								<span>?</span>
+							</div>
+							<div class="faq__info--title">Есть вопросы?</div>
+							<a href="#" class="cbtn cbtn-md cbtn-default">
+								<span>Спросите у менеджера</span>
+								<span class="cbtn__div"></span>
+								<span class="cbtn__iconCircle">
+									<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="container">
+					<div class="section__head section__head--row">
+						<div>
+							<div class="label-default">
+								<span>Блог</span>
+							</div>
+
+							<div class="section__head--space"></div>
+
+							<h2 class="section__heading">
+								Пишем экспертные статьи <br class="sm-hide">
+								для роста доверия
+							</h2>
+						</div>
+
+						<div class="carousel--arrows end sm-hide" data-source="carousel-news">
+							<button class="carousel--arrow carousel--prev slick-arrow">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22785 6.77197L9.56414 8.10833L3.61767 14.0549H30V15.9448H3.61767L9.56414 21.8913L8.22785 23.2276L-1.90735e-06 14.9998L8.22785 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+							<button class="carousel--arrow carousel--next slick-arrow">
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7721 6.77197L20.4359 8.10833L26.3823 14.0549H0V15.9448H26.3823L20.4359 21.8913L21.7721 23.2276L30 14.9998L21.7721 6.77197Z" fill="#1e2127" /></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="carousel-news" id="carousel-news">
+						<div class="article__item" data-index="1">
+							<h4 class="article__title">
+								<a href="#">Развитие рынка поисковой  оптимизации в России</a>
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов веб-сайтов до поисковых систем.
+							</div>
+
+							<div class="article__hashtag">#seoвроссии</div>
+						</div>
+
+						<div class="article__item" data-index="2">
+							<h4 class="article__title">
+								Влияние поведенческих факторов ранжирования на позиции сайтов в результатах поисковой выдачи
+							</h4>
+
+							<div class="article__hashtag">#влияниепф</div>
+						</div>
+
+						<div class="article__item" data-index="3">
+							<h4 class="article__title">
+								Факторы и рекомендации SEO-аудита сайтов электронной коммерции
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов.
+							</div>
+
+							<div class="article__hashtag">#seoвecommerce</div>
+						</div>
+
+						<div class="article__item" data-index="4">
+							<h4 class="article__title">
+								Влияние поведенческих факторов ранжирования на позиции сайтов в результатах поисковой выдачи
+							</h4>
+
+							<div class="article__hashtag">#влияниепф</div>
+						</div>
+
+						<div class="article__item" data-index="5">
+							<h4 class="article__title">
+								Факторы и рекомендации SEO-аудита сайтов электронной коммерции
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов.
+							</div>
+
+							<div class="article__hashtag">#seoвecommerce</div>
+						</div>
+
+						<div class="article__item" data-index="6">
+							<h4 class="article__title">
+								<a href="#">Развитие рынка поисковой  оптимизации в России</a>
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов веб-сайтов до поисковых систем.
+							</div>
+
+							<div class="article__hashtag">#seoвроссии</div>
+						</div>
+
+						<div class="article__item" data-index="7">
+							<h4 class="article__title">
+								Влияние поведенческих факторов ранжирования на позиции сайтов в результатах поисковой выдачи
+							</h4>
+
+							<div class="article__hashtag">#влияниепф</div>
+						</div>
+
+						<div class="article__item" data-index="8">
+							<h4 class="article__title">
+								Факторы и рекомендации SEO-аудита сайтов электронной коммерции
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов.
+							</div>
+
+							<div class="article__hashtag">#seoвecommerce</div>
+						</div>
+
+						<div class="article__item" data-index="9">
+							<h4 class="article__title">
+								Влияние поведенческих факторов ранжирования на позиции сайтов в результатах поисковой выдачи
+							</h4>
+
+							<div class="article__hashtag">#влияниепф</div>
+						</div>
+
+						<div class="article__item" data-index="10">
+							<h4 class="article__title">
+								Факторы и рекомендации SEO-аудита сайтов электронной коммерции
+							</h4>
+
+							<div class="article__desc">
+								В статье рассмотрена эволюция развития поиска информации в Интернет от появления первых каталогов.
+							</div>
+
+							<div class="article__hashtag">#seoвecommerce</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--  SITE FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="label-default">
+						<span>Регистрация</span>
+					</div>
+
+					<div class="footer__space"></div>
+
+					<h2 class="footer__heading">
+						Начните продвижение <br>
+						уже сегодня
+					</h2>
+
+					<div class="footer__desc">
+						Зарегистрируйтесь в сервисе, добавьте сайт и выберите запросы. Система автоматически <br>
+						запустит SEO-продвижение и покажет первые результаты уже на следующий день.
+					</div>
+
+					<div class="footer__space"></div>
+
+					<a href="#" class="cbtn cbtn-md cbtn-default alt">
+						<span>Попробовать 5 дней бесплатно</span>
+						<span class="cbtn__div"></span>
+						<span class="cbtn__iconCircle">
+							<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+						</span>
+					</a>
+
+					<div class="footer__сonfetti"></div>
+
+					<div class="footer__wrapLogo">
+						<a href="#" class="footer__logo">
+							<img src="img/logo-big.png" width="592" height="89" alt="">
+						</a>
+						<div class="footer__siteDesc">
+							Умный инструмент для роста <br>
+							позиций и трафика в Яндексе
+						</div>
+					</div>
+
+					<div class="footer__info">
+						<nav class="footer__nav">
+							<ul class="nav">
+								<li class="menu-item">
+									<a href="#">о сервисе</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">кейсы</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">цены</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">блог</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="boxSocial sm-hide">
+							<div class="boxSocial__title">Мы в соц сетях</div>
+							<div class="socialList">
+								<a href="#" class="social__item">
+									<svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.1401 13.1539L9.75213 18.6113C10.3073 18.6113 10.5477 18.3728 10.836 18.0865L13.4386 15.5992L18.8314 19.5486C19.8205 20.0998 20.5173 19.8095 20.7841 18.6387L24.324 2.05158L24.325 2.0506C24.6387 0.588533 23.7962 0.0168 22.8326 0.375477L2.02543 8.34162C0.605386 8.89283 0.626887 9.68446 1.78403 10.0431L7.10359 11.6977L19.4599 3.96615C20.0414 3.58109 20.5701 3.79415 20.1352 4.17921L10.1401 13.1539Z" fill="#1E2127" /></svg>
+								</a>
+
+								<a href="#" class="social__item">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.3819 7.79845C29.0361 6.51328 28.0228 5.50026 26.7379 5.15419C24.3902 4.51172 14.9997 4.51172 14.9997 4.51172C14.9997 4.51172 5.60941 4.51172 3.26178 5.1297C2.00156 5.47554 0.963588 6.51351 0.61775 7.79845C0 10.1459 0 15.0141 0 15.0141C0 15.0141 0 19.9069 0.61775 22.2298C0.963817 23.5148 1.97684 24.528 3.26201 24.8741C5.63413 25.5166 14.9999 25.5166 14.9999 25.5166C14.9999 25.5166 24.3902 25.5166 26.7379 24.8986C28.023 24.5528 29.0361 23.5395 29.3821 22.2546C29.9999 19.9069 29.9999 15.0389 29.9999 15.0389C29.9999 15.0389 30.0246 10.1459 29.3819 7.79845Z" fill="#1E2127" /><path d="M12.0098 19.5126L19.8185 15.0151L12.0098 10.5176V19.5126Z" fill="white" /></svg>
+								</a>
+
+								<a href="#" class="social__item">
+									<svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.2342 10.2C22.7815 9.62832 22.911 9.37399 23.2342 8.86298C23.24 8.85715 26.9768 3.69348 27.3618 1.94232L27.3642 1.94115C27.5555 1.30298 27.3642 0.833984 26.439 0.833984H23.3777C22.5983 0.833984 22.239 1.23648 22.0465 1.68682C22.0465 1.68682 20.4878 5.41782 18.2828 7.83632C17.5712 8.53515 17.2422 8.75915 16.8537 8.75915C16.6623 8.75915 16.3648 8.53515 16.3648 7.89698V1.94115C16.3648 1.17582 16.1467 0.833984 15.5015 0.833984H10.6878C10.199 0.833984 9.9085 1.19098 9.9085 1.52348C9.9085 2.24915 11.011 2.41598 11.1253 4.45765V8.88748C11.1253 9.85815 10.9492 10.0367 10.5583 10.0367C9.51767 10.0367 6.99183 6.29048 5.495 2.00298C5.19283 1.17115 4.89767 0.835151 4.1125 0.835151H1.05C0.176167 0.835151 0 1.23765 0 1.68798C0 2.48365 1.04067 6.43982 4.83933 11.6665C7.371 15.2342 10.9363 17.1673 14.1797 17.1673C16.1292 17.1673 16.3672 16.738 16.3672 15.9995C16.3672 12.5905 16.191 12.2685 17.1675 12.2685C17.6202 12.2685 18.3995 12.4925 20.2195 14.2133C22.2997 16.2538 22.6415 17.1673 23.8058 17.1673H26.8672C27.7398 17.1673 28.182 16.738 27.9277 15.891C27.3455 14.1095 23.4115 10.445 23.2342 10.2Z" fill="#1E2127" /></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__bottom">
+						<div class="footer__bottom--item footer__copyright">
+							Copyright © 2025 УмныйСервис — SEO-продвижение бизнеса в России.
+						</div>
+
+						<a href="#" class="footer__bottom--item">Политика конфиденциальности</a>
+						<a href="#" class="footer__bottom--item">Оферта</a>
+						<a href="#" class="footer__bottom--item">Политика использования cookie</a>
+						<a href="#" class="footer__bottom--item">Согласие на обработку данных</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<div class="mobile__nav lg-hide" id="mobile__nav">
+			<div class="mobile__nav--inner">
+				<nav class="mobile__nav--nav">
+					<ul class="nav">
+						<li class="menu-item menu-item-has-children">
+							<a href="#">
+								<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2292 0.708332H1.77083C0.79475 0.708332 0 1.50308 0 2.47917V16.2917H17V2.47917C17 1.50308 16.2052 0.708332 15.2292 0.708332ZM16.2917 15.5833H0.708333V2.47917C0.708333 1.89337 1.18504 1.41667 1.77083 1.41667H15.2292C15.815 1.41667 16.2917 1.89337 16.2917 2.47917V15.5833ZM6.375 4.25H14.1667V4.95833H6.375V4.25ZM4.25 4.60417C4.25 4.99517 3.93267 5.3125 3.54167 5.3125C3.15067 5.3125 2.83333 4.99517 2.83333 4.60417C2.83333 4.21317 3.15067 3.89583 3.54167 3.89583C3.93267 3.89583 4.25 4.21317 4.25 4.60417ZM6.375 8.14583H14.1667V8.85417H6.375V8.14583ZM4.25 8.5C4.25 8.891 3.93267 9.20833 3.54167 9.20833C3.15067 9.20833 2.83333 8.891 2.83333 8.5C2.83333 8.109 3.15067 7.79167 3.54167 7.79167C3.93267 7.79167 4.25 8.109 4.25 8.5ZM6.375 12.0417H14.1667V12.75H6.375V12.0417ZM4.25 12.3958C4.25 12.7868 3.93267 13.1042 3.54167 13.1042C3.15067 13.1042 2.83333 12.7868 2.83333 12.3958C2.83333 12.0048 3.15067 11.6875 3.54167 11.6875C3.93267 11.6875 4.25 12.0048 4.25 12.3958Z" fill="#1E2127" /></svg>
+								<span>Услуги</span>
+							</a>
+
+							<ul class="sub-menu">
+								<li class="menu-item">
+									<a href="#">Базовая оптимизация</a>
+								</li>
+								<li class="menu-item menu-item-has-children">
+									<a href="#">Продвижение сайта</a>
+
+									<ul class="sub-menu">
+										<li class="menu-item">
+											<a href="#">Стоматология</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Производства</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Онлайн-магазины</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								<svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4362 3.32421L8.69174 0.305292C7.94587 -0.103417 7.05478 -0.103417 6.30962 0.305292L1.56449 3.32492C0.845534 3.7825 0.416992 4.5645 0.416992 5.41663V13.8132C0.416992 15.5706 1.84712 17.0007 3.60449 17.0007H11.3962C13.1535 17.0007 14.5837 15.5706 14.5837 13.8132V5.41592C14.5837 4.56379 14.1551 3.78179 13.4362 3.32421ZM13.8753 13.8125C13.8753 15.1796 12.7632 16.2917 11.3962 16.2917H3.60449C2.23741 16.2917 1.12533 15.1796 1.12533 13.8125V5.41592C1.12533 4.80746 1.43203 4.24858 1.94487 3.92204L6.65883 0.920833C7.19149 0.634666 7.82191 0.636083 8.33049 0.914458L13.0551 3.92204C13.5686 4.24858 13.8746 4.80746 13.8746 5.41521V13.8118L13.8753 13.8125ZM7.50033 3.54167C6.71903 3.54167 6.08366 4.17704 6.08366 4.95833C6.08366 5.73962 6.71903 6.375 7.50033 6.375C8.28162 6.375 8.91699 5.73962 8.91699 4.95833C8.91699 4.17704 8.28162 3.54167 7.50033 3.54167ZM7.50033 5.66667C7.10933 5.66667 6.79199 5.34863 6.79199 4.95833C6.79199 4.56804 7.10933 4.25 7.50033 4.25C7.89133 4.25 8.20866 4.56804 8.20866 4.95833C8.20866 5.34863 7.89133 5.66667 7.50033 5.66667Z" fill="#1E2127" /></svg>
+								<span>Цены</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								<svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7845 4.99463C15.7394 4.86875 15.6349 4.77375 15.5042 4.74208C15.4037 4.71754 13.5654 4.27738 11.0543 4.06679V3.33371C11.0543 1.93167 9.9119 0.791668 8.49165 0.791668C7.08724 0.791668 5.94407 1.93167 5.94407 3.33371V4.06679C3.43686 4.27738 1.59545 4.71754 1.4949 4.74129C1.36428 4.77296 1.25899 4.86875 1.21465 4.99463C1.17665 5.10229 0.293945 7.65938 0.293945 11.081C0.293945 14.5318 1.17745 17.0636 1.21545 17.1689C1.25978 17.2948 1.36507 17.3897 1.4949 17.4214C1.62711 17.4539 4.7732 18.2067 8.50036 18.2067C12.2275 18.2067 15.3728 17.4531 15.505 17.4214C15.6357 17.3897 15.7417 17.294 15.7853 17.1681C15.8233 17.0604 16.706 14.5033 16.706 11.081C16.706 7.63008 15.8225 5.09913 15.7853 4.99304L15.7845 4.99463ZM6.73574 3.3345C6.73574 2.36946 7.52345 1.58413 8.50749 1.58413C9.4757 1.58413 10.2634 2.36946 10.2634 3.3345V4.01058C9.69815 3.97733 9.10678 3.95675 8.49957 3.95675C7.89236 3.95675 7.30178 3.97654 6.73574 4.01058V3.3345ZM1.89549 5.4625C2.66815 5.29467 5.41999 4.74763 8.49957 4.74763C11.5792 4.74763 14.3342 5.29467 15.1044 5.4625C15.2572 5.9565 15.6341 7.30708 15.8146 9.11208C14.9485 9.29575 11.9053 9.88475 8.50036 9.88475C5.0954 9.88475 2.05382 9.29654 1.18695 9.11287C1.36824 7.31658 1.74349 5.95967 1.89549 5.4625ZM15.1037 16.7018C14.331 16.8696 11.5799 17.4167 8.49957 17.4167C5.4192 17.4167 2.6642 16.8696 1.8947 16.7018C1.69045 16.0423 1.08561 13.8534 1.08561 11.0817C1.08561 10.678 1.09907 10.2853 1.12203 9.90771C2.09736 10.1104 4.90778 10.6329 8.10374 10.6733V11.8125C8.10374 12.031 8.28107 12.2083 8.49957 12.2083C8.71807 12.2083 8.8954 12.031 8.8954 11.8125V10.6733C12.0866 10.6321 14.9018 10.1096 15.8779 9.90771C15.9009 10.2853 15.9135 10.6772 15.9135 11.0817C15.9135 13.8249 15.3071 16.036 15.1037 16.7018Z" fill="#1E2127" /></svg>
+								<span>Кейсы</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">
+								<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2292 3.25H3.1875C2.37575 3.25 1.61429 2.84838 1.15317 2.18821C1.60225 1.54575 2.34671 1.125 3.1875 1.125H16.6458C16.8413 1.125 17 0.966335 17 0.770835C17 0.575335 16.8413 0.416668 16.6458 0.416668H3.1875C1.42729 0.416668 0 1.84396 0 3.60417V11.3958C0 13.156 1.42729 14.5833 3.1875 14.5833H15.2292C16.2074 14.5833 17 13.7907 17 12.8125V5.02084C17 4.04263 16.2074 3.25 15.2292 3.25ZM16.2917 12.8125C16.2917 13.3983 15.815 13.875 15.2292 13.875H3.1875C1.82042 13.875 0.708333 12.7629 0.708333 11.3958V3.60417C0.708333 3.35767 0.744458 3.11967 0.81175 2.89513C1.411 3.56238 2.27375 3.95834 3.1875 3.95834H15.2292C15.815 3.95834 16.2917 4.43504 16.2917 5.02084V12.8125ZM14.875 8.91667C14.875 9.30767 14.5577 9.625 14.1667 9.625C13.7757 9.625 13.4583 9.30767 13.4583 8.91667C13.4583 8.52567 13.7757 8.20834 14.1667 8.20834C14.5577 8.20834 14.875 8.52567 14.875 8.91667Z" fill="#1E2127" /></svg>
+								<span>Партнерская программа</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="mobile__nav--space"></div>
+
+				<a href="#" class="cbtn cbtn-md cbtn-default w100">
+					<span>Запустить 5 дней <br>бесплатного теста</span>
+					<span class="cbtn__div"></span>
+					<span class="cbtn__iconCircle">
+						<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.22344 0.5V1.84531H10.2031L0.5 11.5484L1.45156 12.5L11.1547 2.79453V9.77188H12.5V0.5L3.22344 0.5Z" fill="#FFE500"></path></svg>
+					</span>
+				</a>
+			</div>
+		</div>
+
+		<script src="js/main.min.js?ver=2.0"></script>
+	</body>
+</html>
