@@ -1,0 +1,36 @@
+name: Deploy to reg.ru (FTP)
+
+# Статический сайт «Умный Сервис» — ничего не собираем, отдаём файлы как есть.
+# Заливка на shared-хостинг reg.ru по FTP over TLS (явное шифрование, FTPS).
+# Все доступы берутся из GitHub Secrets, ничего секретного в этом файле нет.
+
+on:
+  push:
+    branches:
+      - main
+      - claude/umni-servis-github-deploy-3ng5rz
+  workflow_dispatch: {}
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to reg.ru via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps            # FTP over TLS, явное шифрование
+          port: 21
+          server-dir: /www/1seosite.ru/   # docroot домена (должен оканчиваться на /)
+          local-dir: ./                    # заливаем содержимое корня репозитория
+          # Не заливаем служебные файлы — только сам сайт
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            README.md
