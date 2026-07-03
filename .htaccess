@@ -1,0 +1,14 @@
+# Умный Сервис — статический сайт на shared-хостинге reg.ru (Apache)
+
+# Чистые URL без расширения .html
+# Например: /jobs -> jobs.html, /about -> about.html
+# Адрес в браузере НЕ меняется (внутренняя подмена), поэтому
+# относительные пути к style.min.css / js / img продолжают работать.
+RewriteEngine On
+
+# Не трогаем реально существующие файлы и папки
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Если рядом есть <путь>.html — отдаём его
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
