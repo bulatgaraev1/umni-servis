@@ -1482,3 +1482,8 @@ opacity:1!important;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=
 		width: 100%;
 	}
 }
+/* fix: trial illustration overlapped heading on normal desktop widths — stack it below the text until it fits beside */
+@media (min-width:991px) and (max-width:1600px){
+  .trial__wrapper .trial__img{position:static;width:auto;max-width:460px;height:auto;display:block;margin:24px auto 0}
+  .trial__wrapper .trial__text.mb-x2{margin-bottom:24px}
+}
