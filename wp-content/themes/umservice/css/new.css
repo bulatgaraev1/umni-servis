@@ -1,0 +1,41 @@
+.static{position:static !important}
+.faq__item.faq__item--type4{background-color:#2f3137;color:var(--light)}
+.ff-second{font-family:'Montserrat', sans-serif !important}
+.list.list2 li:before{content: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='13' r='13' fill='%231E2127' /%3E%3Cpath d='M10.3467 8.78711V9.73246H15.2514L8.43298 16.5509L9.10165 17.2195L15.9201 10.3995V15.3025H16.8654V8.78711L10.3467 8.78711Z' fill='white' /%3E%3C/svg%3E");}
+.boxFeatures4{position:relative}
+.stepNum__num.alt{background-color:var(--dark);color:var(--light)}
+.page-template-page-cases .rate__list{flex-wrap:wrap;width:100%;text-align:center}
+@media(min-width:75.0625em){
+.cbtn-md.cbtn-md2{padding:1em 1.875em}
+.section__inner.sm{padding:5.3125em 3.75em}
+.w80{width:80%}
+.section__heading.sm{font-size:4.25em}
+.space-c012{margin-top:20em}
+.faq__item--title.sm{font-size:1.25em}
+.faq__item--desc.sm{font-size:1.125em;margin-top:1em}
+.stepNum__num.sm span{font-size:1.25em}
+.faq__item--type4 .faq__item--title{font-size:1.5em}
+.faq__item--type4 .faq__item--desc{font-size:1.125em;opacity:0.7}
+.boxFeatures4.gap-md{gap:4.5em}
+.boxFeatures4__floatIcon{position:absolute;top:1.375em;right:1.125em}
+.boxFeatures4__heading{font-weight:600;font-size:1.5em;line-height:1.33333}
+.boxFeatures4__desc{font-weight:400;font-size:1.125em;line-height:1.55556;opacity:.6;margin-top:auto}
+}
+
+@media(max-width:75em){
+.cBox9{border-radius:1em;padding:1.25em}
+.cBox9__content p{font-size:1em}
+.cBox9__content:not(.active){overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-ms-box-orient:vertical;box-orient:vertical;-webkit-line-clamp:15;-moz-line-clamp:15;-ms-line-clamp:15;line-clamp:15}
+.cbtn.w100.sm-w100,
+.sm-w100{width:100%!important}
+.faq__item--title{line-height: 1.25}
+.faq__item--desc{margin-top:.85714285714em}
+.team__item{overflow:hidden}
+.team__content.color-light{background-color:var(--dark)}
+.stepNum__title{line-height:1.4;padding-right:1.8em}
+.boxFeatures4__heading{font-weight:600;font-size:1.25em;line-height:1.33333}
+.boxFeatures4__floatIcon{height:auto;width:3.125em}
+.boxFeatures4__heading.ff-second,
+.stepNum__title.ff-second{font-size:1em}
+.boxFeatures4__heading.ff-second + .boxFeatures4__desc{font-size:.875em}
+}

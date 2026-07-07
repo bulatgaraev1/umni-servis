@@ -1,0 +1,17 @@
+/*!
+Theme Name: cleverservice
+Theme URI:
+Author: Olga
+Author URI:
+Description: Custom WordPress theme cleverservice. Static markup converted to a WP theme. ACF Pro is used for content fields.
+Version: 1.0.0
+Requires at least: 5.5
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cleverservice
+Tags: custom-menu, featured-images, translation-ready
+
+Real CSS lives in /css/style.min.css. This file exists only because WordPress requires style.css with theme metadata in the root.
+*/
