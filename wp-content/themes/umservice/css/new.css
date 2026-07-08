@@ -41,3 +41,11 @@
 }
 /* fix: выровнять строку поиска по центру относительно рубрик в блоге (не ломая карусель рубрик) */
 .row-sm:has(.wrap-blogTags){align-items:center}
+
+/* mobile: blog category tabs -> horizontal scroll (no wrap), hide non-working arrows */
+@media(max-width:768px){
+  .wrap-blogTags .blogTags{display:flex;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:8px}
+  .wrap-blogTags .blogTags::-webkit-scrollbar{display:none}
+  .wrap-blogTags .blogTag{flex:0 0 auto;white-space:nowrap;margin:0}
+  .wrap-blogTags .carousel--arrows{display:none}
+}
