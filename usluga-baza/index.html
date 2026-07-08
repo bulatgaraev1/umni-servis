@@ -147,11 +147,7 @@ _tmr.push({id: "3587644", type: "pageView", start: (new Date()).getTime()});
     <header class="header header--account">
         <div class="container container--1440">
             <div class="header__wrapper">
-                <a href="#" class="hamburger mob-nav--trigger lg-hide">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </a>
+                <a href="#" class="hamburger mob-nav--trigger lg-hide"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="1.75" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="1.75" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="1.75" cy="19.25" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="19.25" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="19.25" r="1.75" fill="#1E2127"/></svg></a>
 
                 <a class="header__logo logo" href="/">
                     <img src="/wp-content/themes/thememaxi/img/logo.svg" alt="logo" />
@@ -186,11 +182,7 @@ _tmr.push({id: "3587644", type: "pageView", start: (new Date()).getTime()});
         <div class="container container--1440">
             <div class="header__wrapper">
                 <div class="lg-hide">
-                    <a href="#" class="hamburger mob-nav--trigger">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </a>
+                    <a href="#" class="hamburger mob-nav--trigger"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="1.75" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="1.75" r="1.75" fill="#1E2127"/><circle cx="1.75" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="10.5" r="1.75" fill="#1E2127"/><circle cx="1.75" cy="19.25" r="1.75" fill="#1E2127"/><circle cx="10.5" cy="19.25" r="1.75" fill="#1E2127"/><circle cx="19.25" cy="19.25" r="1.75" fill="#1E2127"/></svg></a>
 
                     <a class="header__logo logo" href="/">
                         <img src="/wp-content/themes/thememaxi/img/logo.svg" alt="logo" />
@@ -1962,5 +1954,6 @@ _tmr.push({id: "3678407", type: "pageView", start: (new Date()).getTime()});
 </script>
 <!-- Roistat Counter End -->
 
+<script>jQuery(function($){$(".mob-nav--trigger").off("click.uh").on("click.uh",function(e){e.preventDefault();$(this).toggleClass("active");$(".header__menu.menu").stop(true,true).slideToggle(250);$("body").toggleClass("mob-nav--open");});});</script>
 </body>
 </html>
