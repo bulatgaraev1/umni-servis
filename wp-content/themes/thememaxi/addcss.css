@@ -1294,3 +1294,19 @@ td.rate-last {
   font-size:16px !important;font-weight:400 !important;line-height:1 !important;
 }
 #main_nav > li.menu-item > .menu__link:hover{background-color:#ececec !important}
+
+/* === Единый вид шапки (как umservice): меню-пилюли + логотип по центру === */
+#main_nav{ gap:10px; align-items:center; }
+#main_nav > .menu-item > .menu__link{
+  display:inline-flex; align-items:center;
+  background:#f2f2f2; color:#1E2127;
+  border-radius:8px; padding:10px 13px;
+  font-size:16px; font-weight:400; line-height:1;
+}
+#main_nav > .menu-item > .menu__link:hover{ background:#e8e8e8; color:#1E2127; }
+@media (min-width:993px){
+  .header__wrapper{ position:relative; }
+  .header__wrapper > .header__logo{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); margin:0; }
+  .header__wrapper > .header__menu{ margin-right:auto; }
+  .header__wrapper > .header__tools{ margin-left:auto; }
+}
