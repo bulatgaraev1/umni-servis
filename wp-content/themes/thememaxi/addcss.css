@@ -1343,3 +1343,10 @@ td.rate-last {
 .header--account .container--1440{max-width:994px !important;margin-left:auto !important;margin-right:auto !important;padding:0 20px !important}
 .header--account .header__wrapper{background:#fff !important;border-radius:14px !important;padding:6px 14px !important;box-sizing:border-box}
 .header--account .header__btn-t{display:none !important}
+
+/* mobile: login icon instead of telegram on service pages */
+@media(max-width:990px){
+.header--account .header__tools a.header__btn{display:none !important}
+.header--account .header__btn-t{display:inline-flex !important;width:44px !important;height:44px !important;background-color:#f2f2f2 !important;border-radius:8px !important;align-items:center;justify-content:center;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%231E2127' d='M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z'/%3E%3C/svg%3E") !important;background-repeat:no-repeat !important;background-position:center !important;background-size:20px 20px !important}
+.header--account .header__btn-t svg{display:none !important}
+}
