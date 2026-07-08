@@ -1326,3 +1326,7 @@ td.rate-last {
   padding:11px 20px; font-size:16px; font-weight:500; box-shadow:none; border:none;
 }
 .header__tools .header__btn:hover{ background:#33373f; color:#fff; }
+
+/* иконки в пилюлях меню услуг: отступ иконка↔текст */
+#main_nav > .menu-item > .menu__link{ gap:7px; }
+#main_nav > .menu-item > .menu__link svg{ flex:0 0 auto; }
