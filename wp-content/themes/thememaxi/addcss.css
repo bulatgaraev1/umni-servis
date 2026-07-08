@@ -1310,3 +1310,19 @@ td.rate-last {
   .header__wrapper > .header__menu{ margin-right:auto; }
   .header__wrapper > .header__tools{ margin-left:auto; }
 }
+
+/* правый блок шапки как umservice: Telegram-квадрат (иконка) + чёрная «Войти» */
+.header__tools{ gap:10px; align-items:center; }
+.header__tools .header__btn-t{
+  width:44px; height:44px; min-width:44px; padding:0;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#f2f2f2; border-radius:8px; color:#1E2127; gap:0;
+}
+.header__tools .header__btn-t > span{ display:none; }
+.header__tools .header__btn-t svg{ width:20px; height:18px; }
+.header__tools .header__btn-t svg path{ fill:#1E2127; }
+.header__tools .header__btn{
+  background:#1E2127; color:#fff; border-radius:8px;
+  padding:11px 20px; font-size:16px; font-weight:500; box-shadow:none; border:none;
+}
+.header__tools .header__btn:hover{ background:#33373f; color:#fff; }
