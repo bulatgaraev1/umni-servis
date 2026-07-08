@@ -1330,3 +1330,10 @@ td.rate-last {
 /* иконки в пилюлях меню услуг: отступ иконка↔текст */
 #main_nav > .menu-item > .menu__link{ gap:7px; }
 #main_nav > .menu-item > .menu__link svg{ flex:0 0 auto; }
+
+/* service header -> umservice look (unify): no caret, 44px pills, gray tg square, compact Войти */
+.header--account .menu-item-has-children > .menu__link::after{display:none !important}
+.header--account .menu__link{min-height:44px !important;box-sizing:border-box;display:inline-flex !important;align-items:center;font-size:16px !important}
+.header--account .header__tools{gap:10px !important;align-items:center}
+.header--account .header__btn-t{width:44px !important;height:44px !important;min-width:44px !important;background:#f2f2f2 !important;border-radius:8px !important;display:inline-flex !important;align-items:center;justify-content:center;padding:0 !important}
+.header--account .header__tools a.header__btn{height:44px !important;min-height:0 !important;max-height:44px !important;width:auto !important;min-width:0 !important;line-height:1 !important;box-sizing:border-box !important;border:0 !important;padding:0 20px !important;border-radius:8px !important;display:inline-flex !important;align-items:center}
