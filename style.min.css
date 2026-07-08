@@ -1797,3 +1797,9 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .case__item .case__desc{margin-top:2em;line-height:1.5}
 .case__item .space-mds{margin-top:2.25em}
 .case__item .cbtn__div{display:none}
+
+/* header right block: gap + Telegram/Войти sized like menu pills */
+.header__info{gap:10px;align-items:center}
+.header__tg{width:44px;height:44px;min-width:44px;padding:0;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
+.header__tg--square{width:44px;height:44px;background:#f2f2f2;border-radius:8px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.header__info .cbtn{min-height:44px;height:44px;padding:0 20px;border-radius:8px;display:inline-flex;align-items:center}
