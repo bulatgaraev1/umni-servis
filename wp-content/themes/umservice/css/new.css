@@ -39,6 +39,5 @@
 .stepNum__title.ff-second{font-size:1em}
 .boxFeatures4__heading.ff-second + .boxFeatures4__desc{font-size:.875em}
 }
-/* fix: выровнять строку поиска по центру относительно рубрик в блоге */
+/* fix: выровнять строку поиска по центру относительно рубрик в блоге (не ломая карусель рубрик) */
 .row-sm:has(.wrap-blogTags){align-items:center}
-.row-sm:has(.wrap-blogTags) > [class*="col-"]{display:flex;align-items:center}
