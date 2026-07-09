@@ -1846,7 +1846,6 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .header__info{gap:10px;align-items:center}
 .header__tg{width:44px;height:44px;min-width:44px;padding:0;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
 .header__tg--square{width:44px;height:44px;background:#f2f2f2;border-radius:8px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
-.header__info .cbtn{min-height:44px;height:44px;padding:0 20px;border-radius:8px;display:inline-flex;align-items:center}
 
 /* mobile: login icon instead of telegram (right side) */
 .header__tg{display:none !important}
@@ -1864,3 +1863,11 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .us-fab:hover span{color:#000}
 @media(min-width:991px){.us-fab{border-radius:20px;width:115px;padding:15px;right:30px}.us-fab span{font-size:14px}}
 @media(max-width:990px){.us-fab{border-radius:10px;padding:12px;right:15px}.us-fab svg{width:35px;height:auto}.us-fab span{font-size:11px;margin-top:-5px}}
+
+/* Войти в мобильном меню под CTA */
+.us-mlogin{display:flex;margin-top:10px;justify-content:center;box-sizing:border-box}
+/* нижняя липкая панель удалена — убрать оставленный под неё отступ футера */
+@media(max-width:75em){.footer{margin-bottom:0 !important}}
+
+/* CTA в мобильном меню на всю ширину (как на главной) */
+.mobile__nav .cbtn.w100{display:flex}

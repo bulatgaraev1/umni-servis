@@ -149,7 +149,7 @@
   .us-foot h4, .us-foot .h4{font-size:1.25em;line-height:1.5}
   .us-foot h5, .us-foot .h5{font-size:1.125em;line-height:1.55}
   .us-foot h6, .us-foot .h6{font-size:1em;line-height:1.55}
-  .us-foot{margin-bottom:5em}
+  .us-foot{margin-bottom:0}
   .us-foot .uf-footer__inner{border-radius:2.5em;padding:2.625em 2.1875em 0}
   .us-foot .uf-footer__space{margin-top:1.25em}
   .us-foot .uf-footer__desc{font-size:.875em;line-height:1.42;margin-top:.8571428571em}
