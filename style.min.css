@@ -1830,3 +1830,10 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 /* fab hidden while mobile menu open */
 body.mob__nav--open .us-fab{display:none !important}
+
+/* home cases block: button lower + arrows to right corner under screenshot */
+@media(min-width:75.0625em){
+.case__item .case__content{padding-bottom:80px}
+.case__item .case__content > .sm-hide.mt-a{transform:translateY(80px)}
+.wrap-carousel-case > .carousel--arrows{left:auto !important;right:12px !important;top:auto !important;bottom:45px !important;margin:0 !important}
+}
