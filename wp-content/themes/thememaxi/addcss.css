@@ -1340,11 +1340,20 @@ td.rate-last {
 
 /* service header plate = umservice floating rounded plate (exact match) + hide telegram */
 .header.header--account{background:transparent !important;box-shadow:none !important}
-.header--account .container--1440{max-width:100% !important;margin:0 !important;padding:0 20px !important}
+.header--account .container--1440{max-width:100% !important;margin:0 auto !important;padding:0 20px !important;width:auto !important}
 .header--account .header__wrapper{background:#fff !important;box-sizing:border-box}
 @media(min-width:75.0625em){
 .header.header--account{padding:30px 0 !important}
-.header--account .header__wrapper{border-radius:20px !important;padding:10px 20px !important}
+.header--account .header__wrapper{border-radius:20px !important;padding:10px 30px !important}
+}
+@media(min-width:75.0625em) and (max-width:100em){
+.header--account .header__wrapper{padding:10px 20px !important}
+}
+@media(min-width:93.8125em) and (max-width:106.25em){
+.header--account .container--1440{width:calc(100% - 40px) !important}
+}
+@media(min-width:106.312em){
+.header--account .container--1440{width:1640px !important}
 }
 @media(max-width:75em){
 .header.header--account{padding:10px 0 !important}
