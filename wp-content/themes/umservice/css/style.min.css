@@ -1862,7 +1862,7 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 .us-fab:hover{background-color:#ffe500}
 .us-fab:hover span{color:#000}
 @media(min-width:991px){.us-fab{border-radius:20px;width:115px;padding:15px;right:30px}.us-fab span{font-size:14px}}
-@media(max-width:990px){.us-fab{border-radius:10px;padding:12px;right:15px}.us-fab svg{width:35px;height:auto}.us-fab span{font-size:11px;margin-top:-5px}}
+@media(max-width:990.98px){.us-fab{border-radius:10px;padding:12px;right:15px}.us-fab svg{width:35px;height:auto}.us-fab span{font-size:11px;margin-top:-5px}}
 
 /* Войти в мобильном меню под CTA */
 .us-mlogin{display:flex;margin-top:10px;justify-content:center;box-sizing:border-box}
@@ -1871,3 +1871,6 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 /* CTA в мобильном меню на всю ширину (как на главной) */
 .mobile__nav .cbtn.w100{display:flex}
+
+/* fab hidden while mobile menu open */
+body.mob__nav--open .us-fab{display:none !important}

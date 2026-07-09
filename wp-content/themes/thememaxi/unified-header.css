@@ -1,3 +1,5 @@
+@font-face{font-family:'Sora';src:url('/wp-content/themes/umservice/fonts/Sora-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Sora';src:url('/wp-content/themes/umservice/fonts/Sora-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
 /* unified header (uh-) — точная копия шапки главной (umservice), изолированные классы.
    Геометрия снята замерами: контейнер ≥1701px = 1640px по центру; 1501–1700 = 100%-40px;
    плашка 20px/14px радиус, паддинги 10 30 / 10 20 / 6 14; пилюли 44px #f2f2f2 r8. */
@@ -5,6 +7,7 @@
 .uh-head *,.uh-mnav *{box-sizing:border-box}
 .uh-head ul,.uh-mnav ul{list-style:none;margin:0;padding:0}
 .uh-head a,.uh-mnav a{text-decoration:none;color:#1e2127}
+body{padding-top:40px}
 .uh-head{position:fixed;top:0;left:0;right:0;z-index:111;padding:30px 0;background:transparent}
 .uh-container{max-width:100%;margin:0 auto;padding:0 20px}
 .uh-inner{position:relative;display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:20px;padding:10px 30px}
@@ -42,7 +45,7 @@
 .uh-nav{display:none}
 .uh-btn{display:none}
 .uh-login{display:inline-flex}
-.uh-logo img{height:24px}
+.uh-logo img{height:20px}
 }
 /* мобильное меню (drawer) — как на главной */
 .uh-mnav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:#fff;z-index:11;padding:120px 59px 40px;overflow:auto}
@@ -54,7 +57,7 @@ body.uh-open{overflow:hidden}
 .uh-has-sub.open > .uh-msub{display:block}
 .uh-msub a{font-size:16px}
 .uh-msub li + li{margin-top:10px}
-.uh-cta{margin-top:30px;display:flex;align-items:center;justify-content:center;background:#ffe500;color:#1e2127;border-radius:20px;padding:20px 30px;font-size:16px;width:100%;text-align:center}
+.uh-cta{margin-top:30px;display:flex;align-items:center;justify-content:space-between;text-align:left;background:#ffe500;color:#1e2127;border-radius:20px;padding:20px 30px;font-size:16px;width:100%;text-align:center}
 @media(min-width:75.0625em){.uh-mnav{display:none !important}}
 
 /* floating CTA (us-fab) - as on partner page, isolated */
@@ -63,7 +66,7 @@ body.uh-open{overflow:hidden}
 .us-fab:hover{background-color:#ffe500}
 .us-fab:hover span{color:#000}
 @media(min-width:991px){.us-fab{border-radius:20px;width:115px;padding:15px;right:30px}.us-fab span{font-size:14px}}
-@media(max-width:990px){.us-fab{border-radius:10px;padding:12px;right:15px}.us-fab svg{width:35px;height:auto}.us-fab span{font-size:11px;margin-top:-5px}}
+@media(max-width:990.98px){.us-fab{border-radius:10px;padding:12px;right:15px}.us-fab svg{width:35px;height:auto}.us-fab span{font-size:11px;margin-top:-5px}}
 
 /* Baza page: light gray bg instead of yellow (unified concept) */
 .page-template-page-baza .hero,
@@ -71,3 +74,8 @@ body.uh-open{overflow:hidden}
 
 /* Войти в мобильном меню под CTA */
 .uh-mlogin{margin-top:10px;display:flex;align-items:center;justify-content:center;background:#1e2127;color:#fff;border-radius:20px;padding:20px 30px;font-size:16px;width:100%;text-align:center}
+
+.uh-mnav a.uh-mlogin{color:#fff}
+.uh-cta__div{flex:1 1 auto;min-width:12px}
+.uh-cta__circle{width:26px;height:26px;min-width:26px;background:#1e2127;border-radius:100%;display:flex;align-items:center;justify-content:center}
+body.uh-open .us-fab{display:none !important}
